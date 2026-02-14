@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memorial for Macintosh Wifi I-Dog Ratliff</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<h1>Memorial for Macintosh Wifi I-Dog Ratliff</h1>
+<p class="subtitle">Forever Our Macarooni</p>
+</header>
+
+<!-- ================= SLIDESHOW ================= -->
+
+<section class="slideshow-section">
+<h2>Remembering Mac</h2>
+
+<div class="slideshow-container">
+<img class="slide active" src="images/photo1.jpg" alt="">
+<img class="slide" src="images/photo2.jpg" alt="">
+<img class="slide" src="images/photo3.jpg" alt="">
+</div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery-section">
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+<div class="photo-card"><img src="images/photo1.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo2.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo3.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo4.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo5.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo6.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo7.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo8.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo9.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo10.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo11.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo12.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo13.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo14.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo15.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo16.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo17.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo18.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo19.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo20.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo21.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo22.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo23.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo24.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo25.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo26.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo27.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo28.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo29.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo30.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+<div class="photo-card"><img src="images/photo31.jpg" alt=""><button class="heart-btn">💗 <span>0</span></button></div>
+</div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+<span class="close">&times;</span>
+<img id="lightbox-img" src="">
+</div>
+
+<!-- ================= GUESTBOOK ================= -->
+
+<section class="guestbook-section">
+
+<h2>Share a Memory of Macintosh</h2>
+
+<form id="memory-form">
+<input id="name" placeholder="Your name" required>
+<textarea id="memory" placeholder="Tell us a story about Macintosh..." required></textarea>
+<button type="submit">Post Memory</button>
+</form>
+
+<div id="memories"></div>
+
+</section>
+
+<footer>
+<p>In Loving Memory of Macintosh 🐾</p>
+</footer>
+
+<script>
+
+/* ========= SLIDESHOW ========= */
+
+const slides = document.querySelectorAll(".slide");
+let s = 0;
+
+setInterval(() => {
+slides[s].classList.remove("active");
+s = (s + 1) % slides.length;
+slides[s].classList.add("active");
+}, 4000);
+
+
+/* ========= LIGHTBOX ========= */
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.querySelectorAll(".photo-card img").forEach(img => {
+img.onclick = () => {
+lightbox.style.display = "flex";
+lightboxImg.src = img.src;
+};
+});
+
+document.querySelector(".close").onclick = () =>
+lightbox.style.display = "none";
+
+lightbox.onclick = e => {
+if (e.target === lightbox) lightbox.style.display = "none";
+};
+
+
+/* ========= HEART REACTIONS ========= */
+
+document.querySelectorAll(".heart-btn").forEach((btn, i) => {
+const key = "hearts-" + i;
+let count = localStorage.getItem(key) || 0;
+btn.querySelector("span").textContent = count;
+
+btn.onclick = () => {
+count++;
+localStorage.setItem(key, count);
+btn.querySelector("span").textContent = count;
+};
+});
+
+
+/* ========= GUESTBOOK WITH COMMENTS ========= */
+
+const form = document.getElementById("memory-form");
+const memoriesDiv = document.getElementById("memories");
+
+function loadMemories() {
+const memories = JSON.parse(localStorage.getItem("memories")) || [];
+memoriesDiv.innerHTML = "";
+
+memories.forEach((m, i) => {
+
+const div = document.createElement("div");
+div.className = "memory";
+
+div.innerHTML = `
+<strong>${m.name}</strong>
+<p>${m.text}</p>
+
+<div class="comments" id="comments-${i}"></div>
+
+<input placeholder="Write a comment..." id="input-${i}">
+<button onclick="addComment(${i})">Reply</button>
+`;
+
+memoriesDiv.appendChild(div);
+
+if (m.comments) {
+m.comments.forEach(c => {
+const cdiv = document.createElement("div");
+cdiv.className = "comment";
+cdiv.textContent = c;
+div.querySelector(".comments").appendChild(cdiv);
+});
+}
+
+});
+}
+
+form.onsubmit = e => {
+e.preventDefault();
+
+const name = document.getElementById("name").value;
+const text = document.getElementById("memory").value;
+
+const memories = JSON.parse(localStorage.getItem("memories")) || [];
+
+memories.unshift({ name, text, comments: [] });
+
+localStorage.setItem("memories", JSON.stringify(memories));
+
+form.reset();
+loadMemories();
+};
+
+function addComment(i) {
+
+const input = document.getElementById("input-" + i);
+const memories = JSON.parse(localStorage.getItem("memories"));
+
+memories[i].comments.push(input.value);
+
+localStorage.setItem("memories", JSON.stringify(memories));
+
+loadMemories();
+}
+
+loadMemories();
+
+</script>
+
+</body>
+</html>
