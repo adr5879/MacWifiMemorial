@@ -7,12 +7,19 @@
 --black:#000;
 }
 
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(var(--white),var(--pink));
-color:var(--black);
-cursor:url("images/paw-cursor.png"),auto;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--black);
+    cursor: url("images/paw-cursor.png"), auto;
+
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 30px,
+        #ffd6e7 30px,
+        #ffd6e7 60px
+    );
 }
 
 header{
