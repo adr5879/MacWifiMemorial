@@ -7,11 +7,14 @@
 --black:#000;
 }
 
-body {
-    margin: 10;
+h1, h2, h3 {
     font-family: "green-fairy-full-combo", sans-serif;
     font-weight: 800;
     font-style: normal;
+}
+body {
+    margin: 10;
+    
     color: var(--black);
     cursor: url("images/paw-cursor.png"), auto;
 
