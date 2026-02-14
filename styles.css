@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 10;
     font-family: Arial, sans-serif;
     color: var(--black);
     cursor: url("images/paw-cursor.png"), auto;
