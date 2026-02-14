@@ -9,7 +9,9 @@
 
 body {
     margin: 10;
-    font-family: Arial, sans-serif;
+    font-family: "green-fairy-full-combo", sans-serif;
+font-weight: 800;
+font-style: normal;
     color: var(--black);
     cursor: url("images/paw-cursor.png"), auto;
 
