@@ -5,6 +5,35 @@
   --cream:#faf7f4;
   --warm-gray:#6f6f6f;
 }
+/* Password Page */
+
+.login-card{
+  max-width:420px;
+  margin:120px auto;
+  padding:40px;
+  background:rgba(255,255,255,.95);
+  border-radius:16px;
+  border:5px solid var(--warm-gray);
+  text-align:center;
+}
+
+.login-card input{
+  padding:12px;
+  width:80%;
+  margin:12px 0;
+  border-radius:8px;
+  border:2px solid #f3c6d4;
+  font-size:16px;
+}
+
+.login-card button{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:#f3c6d4;
+  font-weight:bold;
+  cursor:pointer;
+}
 
 /* Background */
 
