@@ -4,7 +4,6 @@
   --blush:#f3c6d4;
   --cream:#faf7f4;
   --warm-gray:#6f6f6f;
-  --gold:#e7c873;
 }
 
 /* Background */
@@ -33,6 +32,9 @@ h1, h2, h3 {
 /* Header */
 
 header{
+  font-family: "green-fairy-full-combo", sans-serif;
+    font-weight: 800;
+    font-style: normal;
   background:var(--cream);
   text-align:center;
   padding:40px 20px;
