@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Memorial</title>
+<link rel="stylesheet" href="https://use.typekit.net/bsv0tlq.css">
+</head>
+
+<body>
+
+<div class="login-card">
+
+  <h1>Mac’s Memorial</h1>
+  <p>This site is private. Please enter the password.</p>
+
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Enter</button>
+
+  <p id="error"></p>
+
+</div>
+
+<script>
+function checkPassword() {
+
+  const correct = "macintosh"; // ← CHANGE THIS
+  const entered = document.getElementById("password").value;
+
+  if (entered === correct) {
+    window.location.href = "home.html";
+  } else {
+    document.getElementById("error").textContent =
+      "Incorrect password.";
+  }
+}
+</script>
+
+</body>
+</html>
